@@ -1,5 +1,6 @@
 <?php
 
+/* test */
 /*
  * This file is part of the Symfony package.
  *
