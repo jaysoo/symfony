@@ -2,7 +2,8 @@
   "installation": {
     "version": "21.1.2",
     "plugins": {
-      "@nx/php": "0.21.0"
+      "@nx/php": "0.21.0",
+      "@nx/workspace": "21.1.2"
     }
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
