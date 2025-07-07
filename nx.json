@@ -31,5 +31,6 @@
       "!{projectRoot}/**/*.md",
       "!{projectRoot}/(test|tests|Test|Tests)/**/*"
     ]
-  }
+  },
+  "nxCloudId": "686c4e781d651482ab90c941"
 }
