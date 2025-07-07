@@ -1,0 +1,35 @@
+{
+  "installation": {
+    "version": "21.1.2",
+    "plugins": {
+      "@nx/php": "0.21.0"
+    }
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "plugins": [
+    {
+      "plugin": "@nx/php/composer",
+      "options": {
+        "installTargetName": "install",
+        "updateTargetName": "update",
+        "ignorePattern": "**/{tests,fixtures}/**"
+      }
+    },
+    {
+      "plugin": "@nx/php/phpunit",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "namedInputs": {
+    "default": [
+      "{projectRoot}/**/*"
+    ],
+    "production": [
+      "default",
+      "!{projectRoot}/**/*.md",
+      "!{projectRoot}/(test|tests|Test|Tests)/**/*"
+    ]
+  }
+}
